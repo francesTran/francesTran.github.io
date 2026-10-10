@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just For Fun — Frances Tran</title>
+<meta name="description" content="Frances Tran: computational engineering and mathematics at UT Austin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff}
+*{box-sizing:border-box}
+a{color:#E44D27;text-decoration:underline;text-underline-offset:3px}
+a:hover{color:#B8391A}
+@media (max-width:600px){h1{font-size:32px !important;letter-spacing:0.1em !important}}
+a:focus-visible,button:focus-visible{outline:2px solid #1A1AA7;outline-offset:3px}
+[data-slot]{position:relative;overflow:hidden}
+[data-slot].has-photo{border:0 !important;padding:0 !important;background:none !important}
+[data-slot] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+[data-slot].editable{cursor:pointer}
+[data-slot].editable:hover,[data-slot].editable:focus-visible{outline:2px solid #1A1AA7;outline-offset:2px}
+[data-slot] .hint{position:absolute;left:6px;bottom:6px;background:rgba(17,17,17,.75);color:#fff;font-size:10px;letter-spacing:.12em;padding:3px 6px;text-transform:uppercase;opacity:0;transition:opacity .15s}
+[data-slot].editable:hover .hint,[data-slot].editable:focus-visible .hint{opacity:1}
+[data-slot].busy{opacity:.5}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #ffffff; color: #111111; font-family: 'Figtree', 'Helvetica Neue', Arial, sans-serif; font-size: 15px; line-height: 1.7">
+
+  <header style="padding: 64px 24px 0; text-align: center">
+    <a href="index.html" style="text-decoration: none; color: #1A1AA7">
+      <h1 style="margin: 0; font-size: 52px; font-weight: 700; letter-spacing: 0.14em; line-height: 1.1; text-transform: uppercase; color: #1A1AA7">Frances Tran</h1>
+    </a>
+    <nav aria-label="Main" style="margin-top: 18px; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 26px; font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase">
+      <a href="index.html" style="color: #111111; text-decoration: none; padding: 14px 0">About</a>
+      <a href="resume.html" style="color: #111111; text-decoration: none; padding: 14px 0">Resume</a>
+      <a href="experience.html" style="color: #111111; text-decoration: none; padding: 14px 0">Work Experience</a>
+      <a href="projects.html" style="color: #111111; text-decoration: none; padding: 14px 0">Projects</a>
+      <a href="organizations.html" style="color: #111111; text-decoration: none; padding: 14px 0">Organizations</a>
+      <a href="fun.html" aria-current="page" style="color: #1A1AA7; text-decoration: none; padding: 14px 0">Just For Fun</a>
+      <a href="contact.html" style="color: #111111; text-decoration: none; padding: 14px 0">Contact</a>
+    </nav>
+    <div role="tablist" aria-label="Just for fun" style="margin: 6px auto 0; max-width: 760px; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 22px; border-top: 1px solid #E6E6E9; padding-top: 4px">
+      <button type="button" role="tab" aria-selected="false" data-tab="music" style="font: inherit; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; background: none; border: 0; border-bottom: 2px solid transparent; color: #111111; padding: 12px 0 8px; min-height: 44px; cursor: pointer">Music</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="fitness" style="font: inherit; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; background: none; border: 0; border-bottom: 2px solid transparent; color: #111111; padding: 12px 0 8px; min-height: 44px; cursor: pointer">Fitness</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="learning" style="font: inherit; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; background: none; border: 0; border-bottom: 2px solid transparent; color: #111111; padding: 12px 0 8px; min-height: 44px; cursor: pointer">Learning</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="travel" style="font: inherit; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; background: none; border: 0; border-bottom: 2px solid transparent; color: #111111; padding: 12px 0 8px; min-height: 44px; cursor: pointer">Travel</button>
+    </div>
+  </header>
+
+  <main style="max-width: 760px; margin: 0 auto; padding: 36px 24px 96px">
+
+    <!-- Music -->
+    <div data-panel="music">
+      <div role="tabpanel">
+        <section style="display: flex; flex-wrap: wrap; gap: 20px 28px; align-items: flex-start">
+          <img src="assets/music/Vivaldi_4_seasons.jpg" alt="Vivaldi Four Seasons album cover" style="width: 140px; height: auto; flex: 0 0 auto">
+          <div style="flex: 1 1 360px; min-width: 0">
+            <h2 style="margin: 0; font-size: 17px; font-weight: 600">Vivaldi Four Seasons</h2>
+            <p style="margin: 2px 0 0; color: #555555">July 17, 2026</p>
+            <p style="margin: 10px 0 0">While Andrew came to visit me, we planned on going to a Four seasons orchestra concert and so to prepare for it, I'd been studying up</p>
+          </div>
+        </section>
+        <section style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 20px 28px; align-items: flex-start">
+          <img src="assets/music/Do-That-Again.jpg" alt="Do That Again album cover" style="width: 140px; height: auto; flex: 0 0 auto">
+          <div style="flex: 1 1 360px; min-width: 0">
+            <h2 style="margin: 0; font-size: 17px; font-weight: 600">Do That Again — Malcolm Todd</h2>
+            <p style="margin: 2px 0 0; color: #555555">June 5, 2026</p>
+            <p style="margin: 10px 0 0">As an og Malcom Todd fan, I had very high hopes for this album. Upon first listen, it wasn't my favorite but I think the more I listen to it, the more it grows on me.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Fitness -->
+    <div data-panel="fitness">
+      <div role="tabpanel">
+        <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Race log</h2>
+        <div style="overflow-x: auto; margin-top: 12px">
+          <table style="width: 100%; border-collapse: collapse; font-size: 15px">
+            <thead>
+              <tr>
+                <th scope="col" style="text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid #111111; font-weight: 600">Race</th>
+                <th scope="col" style="text-align: left; padding: 8px 12px; border-bottom: 1px solid #111111; font-weight: 600">Date</th>
+                <th scope="col" style="text-align: right; padding: 8px 0 8px 12px; border-bottom: 1px solid #111111; font-weight: 600">Distance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px 12px 8px 0; border-bottom: 1px solid #E6E6E9">Houston Marathon</td>
+                <td style="padding: 8px 12px; border-bottom: 1px solid #E6E6E9">Jan 11, 2026</td>
+                <td style="text-align: right; padding: 8px 0 8px 12px; border-bottom: 1px solid #E6E6E9; font-variant-numeric: tabular-nums">26.2 mi</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 12px 8px 0; border-bottom: 1px solid #E6E6E9">Austin Half Marathon</td>
+                <td style="padding: 8px 12px; border-bottom: 1px solid #E6E6E9">Feb 16, 2025</td>
+                <td style="text-align: right; padding: 8px 0 8px 12px; border-bottom: 1px solid #E6E6E9; font-variant-numeric: tabular-nums">13.1 mi</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 12px 8px 0; border-bottom: 1px solid #E6E6E9">Austin International Half Marathon</td>
+                <td style="padding: 8px 12px; border-bottom: 1px solid #E6E6E9">Jan 11, 2025</td>
+                <td style="text-align: right; padding: 8px 0 8px 12px; border-bottom: 1px solid #E6E6E9; font-variant-numeric: tabular-nums">13.1 mi</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td style="padding: 8px 12px 8px 0; font-weight: 600">3 races</td>
+                <td style="padding: 8px 12px"></td>
+                <td style="text-align: right; padding: 8px 0 8px 12px; font-weight: 600; font-variant-numeric: tabular-nums">52.4 mi</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <h2 style="margin: 48px 0 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Current goal</h2>
+        <section style="margin-top: 14px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Build back running base</h3>
+          <p style="margin: 2px 0 0; color: #555555">Since August 2026</p>
+          <p style="margin: 10px 0 0">I've just got back from studying abroad in Barcelona and despite having a really enjoyable time, staying in a different country with a spontaneous itinerary made it difficult to maintain a regular running schedule. I don't have any races planned for 2026-2027, but I want to spend these next couple months building back my running base and working back to 20-25 miles a week. I want to do it out of the love for running rather than viewing it as a chore.</p>
+        </section>
+
+        <h2 style="margin: 48px 0 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Races</h2>
+        <section style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: flex-start">
+          <div style="flex: 1 1 360px; min-width: 0">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 600">Houston Marathon</h3>
+            <p style="margin: 2px 0 0; color: #555555">January 11, 2026</p>
+            <p style="margin: 10px 0 0">I just ran my first full marathon. I found training for this race harder than the actual race itself. Jugging high mileage while being in school was super challenging and I probably would not do another full marathon whie being in school, but I am still glad I was able to accomplish this goal. It also feels nice to cross off a New Years Resolution so early on into 2026.</p>
+          </div>
+          <img src="assets/fitness/Houston-Full1.jpeg" alt="At the Houston Marathon" style="width: 240px; max-width: 100%; height: 180px; object-fit: cover; flex: 0 0 auto">
+        </section>
+        <section style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: flex-start">
+          <div style="flex: 1 1 360px; min-width: 0">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 600">Austin Half Marathon</h3>
+            <p style="margin: 2px 0 0; color: #555555">February 16, 2025</p>
+            <p style="margin: 10px 0 0">Vibes were awesome with this race, I got to run the fastest time for my gender and age group while running with my amazing running companion, Anna who I met through Texas Run Club, (the run club at UT Austin). I remember leading up to the race we were discussing how we wanted to run this race, and since it was Anna's first half marathon, we had agreed on running on "vibes" and just seeing where the race would take us. Never in my life would I have thought that we would place first and second in our division after agreeing that we wanted to take the race "chill". What a privilege to have this body and the friends to do the things I love.</p>
+          </div>
+          <img src="assets/fitness/Austin-Half1.JPG" alt="At the Austin Half Marathon" style="width: 240px; max-width: 100%; height: 180px; object-fit: cover; flex: 0 0 auto">
+        </section>
+        <section style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: flex-start">
+          <div style="flex: 1 1 360px; min-width: 0">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 600">Austin International Half Marathon</h3>
+            <p style="margin: 2px 0 0; color: #555555">January 11, 2025</p>
+            <p style="margin: 10px 0 0">I just ran a super hot PR in the half marathon. This was probably my best race ever. I felt like training for this was super fun and challenging at the same time, but it was super satisfying to see the miles in training pay off mile by mile in the race. I remember crying because I was so happy to hit this PB, and I had exceeded my own race predictions.</p>
+          </div>
+          <img src="assets/fitness/Austin-International1.JPEG" alt="At the Austin International Half Marathon" style="width: 240px; max-width: 100%; height: 180px; object-fit: cover; flex: 0 0 auto">
+        </section>
+      </div>
+    </div>
+
+    <!-- Learning -->
+    <div data-panel="learning">
+      <div role="tabpanel">
+        <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Currently learning</h2>
+        <section style="margin-top: 14px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Learning Astro</h3>
+          <p style="margin: 2px 0 0; color: #555555">Started July 2026</p>
+          <p style="margin: 10px 0 0">Building my new personal website with Astro. Really enjoying the static-first approach and markdown content collections.</p>
+        </section>
+        <section style="margin-top: 32px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Do a frogstand</h3>
+          <p style="margin: 2px 0 0; color: #555555">Started July 2026</p>
+          <p style="margin: 10px 0 0">I want to learn this yoga pose.</p>
+        </section>
+        <section style="margin-top: 32px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Learn all the countries in the world</h3>
+          <p style="margin: 2px 0 0; color: #555555">Started June 2026</p>
+          <p style="margin: 10px 0 0">I so far have a good grasp on North, South, and Central America. Europe and most of Asia is decently mastered. The hardest hurdle has been Africa.</p>
+        </section>
+        <section style="margin-top: 32px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Create a capsule wardrobe</h3>
+          <p style="margin: 2px 0 0; color: #555555">Started June 2026</p>
+          <p style="margin: 10px 0 0">I want to buy items with the intention of consuming less.</p>
+        </section>
+
+        <h2 style="margin: 48px 0 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Learned</h2>
+        <section style="margin-top: 14px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Learned how to French braid my hair</h3>
+          <p style="margin: 2px 0 0; color: #555555">May 2026</p>
+          <p style="margin: 10px 0 0">I grew up never knowing how to braid my own hair since my mom always did it for me. It was only once i studied abroad in Valencia and I did not have my mother's skilled hands at my disposal was I forced to teach myself. Level of difficulty: Easy.</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Travel -->
+    <div data-panel="travel">
+      <div role="tabpanel">
+        <h2 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Been to</h2>
+        <section style="margin-top: 14px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Study Abroad in Spain</h3>
+          <p style="margin: 2px 0 0; color: #555555">May 2026 – August 2026</p>
+          <img src="assets/travel/Barcelona.JPG" alt="Barcelona during study abroad" style="display: block; width: 100%; max-width: 560px; height: auto; margin-top: 14px">
+          <p style="margin: 14px 0 0">So privileged to get to spend a summer in Spain! Summer of 2026 I spent a month taking engineering design in Valencia and then I moved up the east coast of Spain to Barcelona where I took engineering dynamics while simultaneously completing an internship. I had such an amazing experience meeting so many new friends, exploring Europe, and living in Spain for three months.</p>
+        </section>
+        <section style="margin-top: 40px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Study Abroad in Copenhagen, Denmark</h3>
+          <p style="margin: 2px 0 0; color: #555555">May 2025</p>
+          <!-- To add a photo by hand, replace this <div> with
+               <img src="assets/travel/Copenhagen.jpg" alt="Copenhagen during study abroad" style="display: block; width: 100%; max-width: 560px; height: auto; margin-top: 14px"> -->
+          <div data-slot="copenhagen" data-alt="Copenhagen during study abroad" role="img" aria-label="Photo placeholder: Copenhagen" style="width: 100%; max-width: 560px; aspect-ratio: 3 / 2; margin-top: 14px; background: #F1F1F3; border: 1px dashed #B5B5B8; display: flex; align-items: center; justify-content: center; color: #8A8A8D; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase">Copenhagen photo</div>
+          <p style="margin: 14px 0 0">My first taste of being away from Austin for longer than two weeks was a Mayterm in Copenhagen, Denmark. I'm so lucky to have experienced hygge, lounged in Kongens Have (King's Garden) after class, seen amazing artwork at the SMK (the National Gallery of Denmark), run past Amalienborg, and made new engineering friends. I'm also a big fan of the metro.</p>
+        </section>
+
+        <h2 style="margin: 48px 0 0; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #1A1AA7">Want to go</h2>
+        <section style="margin-top: 14px">
+          <h3 style="margin: 0; font-size: 17px; font-weight: 600">Taiwan Grad Trip</h3>
+          <p style="margin: 2px 0 0; color: #555555">After graduation</p>
+          <p style="margin: 10px 0 0">After watching a multitude of Doobydobap videos on youtube and seeing content creator Tina travel around Taipei and eating her way through the vibrant city with her boyfriend, Kevin, I've set my sights on Taiwan as a cool destination to travel to once I finish up undergrad.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer style="padding: 0 24px 48px; text-align: center; font-size: 12px; color: #8A8A8D">© 2026 Frances Tran</footer>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[data-tab]'));
+  function show(id){
+    tabs.forEach(function(t){var on=t.dataset.tab===id;t.setAttribute('aria-selected',on);t.style.borderBottomColor=on?'#1A1AA7':'transparent';t.style.color=on?'#1A1AA7':'#111111';});
+    document.querySelectorAll('[data-panel]').forEach(function(p){p.hidden=p.dataset.panel!==id;});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.tab);history.replaceState(null,'','#'+t.dataset.tab);});});
+  var h=location.hash.slice(1); show(tabs.some(function(t){return t.dataset.tab===h;})?h:'music');
+})();
+</script>
+<script>
+/* Photos: drop files into assets/photos/ named after each box (see assets/photos/README.txt).
+   Any of .jpg .jpeg .png .webp works. Missing files just leave the gray box. */
+(function () {
+  var exts = ['jpg', 'jpeg', 'png', 'webp', 'JPG', 'JPEG', 'PNG'];
+  document.querySelectorAll('[data-slot]').forEach(function (el) {
+    var slot = el.dataset.slot, i = 0;
+    (function tryNext() {
+      if (i >= exts.length || el.querySelector('img')) return;
+      var src = 'assets/photos/' + slot + '.' + exts[i++];
+      var probe = new Image();
+      probe.onload = function () {
+        if (el.querySelector('img')) return;
+        el.textContent = '';
+        var img = document.createElement('img');
+        img.src = src; img.alt = el.dataset.alt || '';
+        el.appendChild(img);
+        el.classList.add('has-photo');
+        el.setAttribute('aria-label', el.dataset.alt || 'Photo');
+      };
+      probe.onerror = tryNext;
+      probe.src = src;
+    })();
+  });
+})();
+</script>
+<script>
+/* In the Claude preview, the owner can click a photo box to upload a picture.
+   On GitHub Pages this script does nothing (window.claude doesn't exist). */
+(async function () {
+  if (!window.claude || !window.claude.use) return;
+  var slots = Array.prototype.slice.call(document.querySelectorAll('[data-slot]'));
+  var db = await window.claude.use('db');
+  var assets = await window.claude.use('assets');
+  var ref = db ? db.doc('about/photos') : null;
+  var saved = {};
+
+  function show(el, url) {
+    var img = el.querySelector('img');
+    if (!img) {
+      el.textContent = '';
+      img = document.createElement('img');
+      img.alt = el.dataset.alt || '';
+      el.appendChild(img);
+    }
+    img.src = url;
+    el.classList.add('has-photo');
+    el.setAttribute('aria-label', el.dataset.alt || 'Photo');
+    if (el.classList.contains('editable')) addHint(el, 'Change photo');
+  }
+  function addHint(el, text) {
+    var h = el.querySelector('.hint');
+    if (!h) { h = document.createElement('span'); h.className = 'hint'; el.appendChild(h); }
+    h.textContent = text;
+  }
+
+  if (ref) {
+    try {
+      var snap = await ref.get();
+      if (snap.exists) saved = snap.data() || {};
+      slots.forEach(function (el) {
+        var id = saved[el.dataset.slot];
+        if (typeof id === 'string' && /^[0-9a-f]{32}$/.test(id)) show(el, '/_blob/' + id);
+      });
+    } catch (e) { /* keep placeholders */ }
+  }
+
+  if (!assets || !ref) return; /* read-only viewers just see the photos */
+
+  var input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/png,image/jpeg,image/gif,image/webp';
+  input.hidden = true;
+  document.body.appendChild(input);
+  var current = null;
+
+  slots.forEach(function (el) {
+    el.classList.add('editable');
+    el.setAttribute('role', 'button');
+    el.tabIndex = 0;
+    if (!el.classList.contains('has-photo')) {
+      el.firstChild && (el.firstChild.textContent = el.firstChild.textContent + ' (click to add)');
+    } else {
+      addHint(el, 'Change photo');
+    }
+    function pick() { current = el; input.value = ''; input.click(); }
+    el.addEventListener('click', pick);
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+  });
+
+  input.addEventListener('change', async function () {
+    var file = input.files && input.files[0];
+    var el = current;
+    if (!file || !el) return;
+    el.classList.add('busy');
+    try {
+      var res = await assets.upload(file);
+      saved[el.dataset.slot] = res.id;
+      var snap = await ref.get();
+      if (snap.exists) await ref.update({ [el.dataset.slot]: res.id });
+      else await ref.set(saved);
+      show(el, res.url);
+    } catch (err) {
+      var code = err && err.code;
+      var msg = code === 'too_large' ? 'Too large (20 MB max)'
+        : code === 'unsupported_type' ? 'Use a JPG, PNG, GIF or WebP'
+        : code === 'rate_limited' ? 'Busy, try again in a moment'
+        : 'Upload failed, try again';
+      addHint(el, msg);
+      el.querySelector('.hint').style.opacity = 1;
+    } finally {
+      el.classList.remove('busy');
+    }
+  });
+})();
+</script>
+</body>
+</html>
